@@ -34,7 +34,7 @@ public class RegisterStudentController {
 	@PostMapping("/register")
 	public String registerStudent(Map<String,Object> map, @ModelAttribute("stud") Student st) {
 		
-		//git changes
+		//git changesdfsjhd
 		String res = "";
 		if(st.getTotMarks()>80f)
 			res=   st.getStName()+ " first";
