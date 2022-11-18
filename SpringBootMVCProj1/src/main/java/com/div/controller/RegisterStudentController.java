@@ -31,8 +31,8 @@ public class RegisterStudentController {
 		return "register";
 	}
 	
-	@PostMapping("/register")
-	public String registerStudent(Map<String,Object> map, @ModelAttribute("stud") Student st) {
+	@PostMapping("/registerDev1")
+	public String registerDev1Student(Map<String,Object> map, @ModelAttribute("stud") Student st) {
 		
 		//git changesdfsjhd455666
 		String res = "";
