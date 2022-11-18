@@ -34,14 +34,14 @@ public class RegisterStudentController {
 	@PostMapping("/register")
 	public String registerStudent(Map<String,Object> map, @ModelAttribute("stud") Student st) {
 		
+		//git changes
 		String res = "";
-		
 		if(st.getTotMarks()>80f)
-			res=   st.getStName()+ " got  First  Class";
+			res=   st.getStName()+ " first";
 		else 	if(st.getTotMarks()>60f)
-			res=   st.getStName()+ " got  Second  Class";
+			res=   st.getStName()+ " Second";
 		else 	if(st.getTotMarks()>40f)
-			res=   st.getStName()+ " got  Third  Class";
+			res=   st.getStName()+ " Third";
 		else
 			res=   st.getStName()+ " got  Failed";
 		
