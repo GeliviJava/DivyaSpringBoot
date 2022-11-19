@@ -35,6 +35,7 @@ public class RegisterStudentController {
 	public String registerDev1Student(Map<String,Object> map, @ModelAttribute("stud") Student st) {
 		
 		//dev3commit1
+		//dev1commit2
 		String res = "";
 		if(st.getTotMarks()>80f)
 			res=   st.getStName()+ "D";
