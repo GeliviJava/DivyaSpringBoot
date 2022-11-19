@@ -34,16 +34,16 @@ public class RegisterStudentController {
 	@PostMapping("/registerDev1")
 	public String registerDev1Student(Map<String,Object> map, @ModelAttribute("stud") Student st) {
 		
-		//dev1commit1
+		//dev1commit2
 		String res = "";
 		if(st.getTotMarks()>80f)
-			res=   st.getStName()+ " 1";
+			res=   st.getStName()+ "A";
 		else 	if(st.getTotMarks()>60f)
-			res=   st.getStName()+ " 2";
+			res=   st.getStName()+ "B";
 		else 	if(st.getTotMarks()>40f)
-			res=   st.getStName()+ " 3";
+			res=   st.getStName()+ "C";
 		else
-			res=   st.getStName()+ " 0";
+			res=   st.getStName()+ "D";
 		
 		//map.put("result", res);
 		
